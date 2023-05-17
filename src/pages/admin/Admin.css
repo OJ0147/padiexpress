@@ -1,0 +1,98 @@
+/* admin navbar (logo and menu button) sidebar styling not included */
+.admin-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    max-width: 100%;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 500;
+}
+.Logo{
+    background-color: #fca510;
+    color: #333;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 5px;
+}
+.admin-navbar ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.admin-navbar ul li a{
+    color: #fff;
+    font-size: 16px;
+}
+
+
+/* admin content */
+.admin-content{
+    display: flex;
+    width: 100%;
+    position: relative;
+
+}
+.admin-content main{
+    flex-basis: 80%;
+    /* height: auto; */
+    min-height: 65vh;
+    height: 100%;
+    background-color:#fff;
+    overflow: hidden;
+}
+.sidebar{
+    min-width: 250px;
+    flex-basis: 20%;
+    background-color: #fff;
+    height: auto;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
+    z-index: 100;
+    padding-top: 70px;
+
+
+}
+
+@media only screen and (min-width:960px){
+    .sidebar-menu{
+        display: none;
+    }
+}
+@media only screen and (max-width: 960px){
+    .sidebar{
+        position: absolute;
+        top: 0;
+        left: -300px;
+        bottom: 0;
+        z-index: 100;
+        transition: all 0.3s ease-in;
+    
+    }
+    .active{
+        left: 0;
+
+    }
+    .admin-content main{
+        flex-basis: 100%;
+        overflow: hidden;
+
+    }
+
+}
+@media only screen and (max-width: 600px){
+    .admin-navbar{
+        padding: 10px 15px;
+    }
+}
+/* @media only screen and (max-width: 750px){
+    .admin-content main{
+        overflow: hidden;
+        
+    }
+} */
+

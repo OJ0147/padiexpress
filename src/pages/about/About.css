@@ -1,0 +1,143 @@
+.aboutpage__hero{
+    max-width: 1200px;
+    height: 500px;
+    border-radius: 8px;
+    margin: 0 auto;
+    background:linear-gradient(rgba(21, 13, 56, 0.5),rgba(11, 6, 78, 0.8)), url('../../assets/pexels-artem-podrez-5025670.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+}
+
+
+.aboutpage__header{
+    text-align: center;
+    color: white;
+}
+.aboutpage__header span{
+    padding: 15px 20px;
+    color: #333;
+    background-color: #fca510;
+    margin: 30px 0;
+    display: inline-block;
+}
+.aboutpage__header h1{
+    font-size: 38px;
+    color: #fca510;
+    padding-bottom: 20px;
+}
+.aboutpage__header p{
+    font-size: 20px;
+    width: 65%;
+    margin: 0 auto;
+}
+.mid{
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 60px auto;
+
+}
+.mid__text{
+    flex-basis: 50%;
+}
+.mid__text h1{
+    font-size: 38px;
+    color: #333;
+    padding-bottom: 25px;
+}
+.mid__text p{
+    font-size: 18px;
+    color: #333;
+    line-height: 1.2;
+}
+.mid__image{
+    flex-basis: 50%;
+}
+.mid__image img{
+    width: 100%;
+    height: 100%;
+}
+.mission{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+}
+.mission__image{
+    flex-basis: 50%;
+    filter:brightness(0.5);
+}
+.mission__image video{
+    width: 100%;
+    height: 100%;
+}
+.mission__text{
+    flex-basis: 50%;
+    padding-top: 40px;
+}
+.mission__text span{
+    padding: 15px 20px;
+    color: #333;
+    background-color: #fca510;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.mission__text h1{
+    font-size: 38px;
+    color: #333;
+    margin-bottom: 25px;
+}
+.mission__text p{
+    font-size: 18px;
+    color: #333;
+    line-height: 1.2;
+}
+.history{
+    margin-bottom: 80px;
+}
+.history a{
+    padding: 15px 20px;
+    color: #fff;
+    background-color: #1e1a47;
+    display: inline-block;
+    margin: 20px 0;
+}
+@media only screen and (max-width:1250px){
+    .mission, .mid{
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width:900px){
+    .mission__text h1, .mid__text h1{
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .mission__text p, .mid__text p{
+        font-size: 16px;
+        line-height: 1.1;
+    }
+    .aboutpage__header p{
+        font-size: 16px;
+        width: 90%;
+        
+    }
+
+    .mission, .mid{
+        padding: 0 20px;
+    }
+}
+@media only screen and (max-width:600px){
+    .mission{
+        flex-direction: column-reverse;
+    }
+    .mid, .history{
+        flex-direction: column;
+    }
+    .aboutpage__header h1{
+        font-size: 32px;
+    }
+    
+}

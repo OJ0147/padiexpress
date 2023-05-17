@@ -1,0 +1,160 @@
+.contact-wrapper{
+    max-width: 800px;
+    margin: 45px auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+
+
+.form-control{
+    flex-basis: 60%;
+    height: auto;
+    padding: 30px 50px 50px ;
+    background: #333;
+}
+.contact-info{
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between ;
+    padding: 30px 20px;
+    background: linear-gradient(rgba(29, 138, 25, 0.4), rgba(35, 187, 29, 0.8)), url(../../assets/map.jpg);
+    
+}
+.contact-info address div{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 25px;
+    color: #333;
+    
+}
+.contact-info address small a, .contact-info address small{
+    font-family:'Josefin Sans', sans-serif;
+    font-weight: 900;
+    color: #333;
+    text-decoration: none;
+}
+.contact-info address div span{
+    display: grid;
+    place-content: center;
+    background: #fca510;
+    color: #333;
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    border-radius: 50%;
+    font-size: 25px;
+}
+.socials{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #333;
+    font-size: 25px;
+    transition: all 0.5s ease-in;
+}
+.socials a:hover{
+    color: #fca510;
+    transform: scale(1.2);
+}
+.form-control h2, .contact-info h2 {
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    margin: 15px;
+}
+
+.form-control form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.form-control form input{
+    width: 100%;
+    padding: 10px 5px;
+    border: 0;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+.form-control form input::placeholder, 
+.form-control form textarea::placeholder{
+    font-size: 12px;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+.form-control form textarea{
+    width: 100%;
+    height: 100px;
+    padding: 10px 5px;
+    margin-bottom: 30px;
+    resize: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.form-btn{
+    color: #fff;
+    background-color: #fca510;
+    padding: 15px 35px;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    border: 0;
+    border-radius: 5px;
+    transition: all 0.5s ease-in;
+    
+}
+.form-btn:hover{
+    background-color: rgb(163, 163, 4);
+    color: #333;
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width:900px){
+    .contact-wrapper{
+        max-width: 700px;
+    }
+
+}
+@media only screen and (max-width:700px){
+    .form-control{
+        padding: 35px;
+    }
+    .form-control form input{
+        margin-bottom: 10px;
+    }
+    .contact-wrapper{
+        flex-direction: column;
+        margin: 45px 20px;
+    }
+
+}
+@media only screen and (max-width:320px){
+    .form-control{
+        padding: 25px;
+    }
+    .form-control form input{
+        margin-bottom: 5px;
+    }
+    .form-control form textarea{
+        height: 80px;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+  

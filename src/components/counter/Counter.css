@@ -1,0 +1,68 @@
+.counter-wrapper{
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    background-color: #ffffff4b;
+    backdrop-filter: blur(5px);
+    padding: 15px;
+    border-radius: 8px;
+}
+.counter{
+    height:30px;
+    font-size:25px;
+    color: #fca510;
+    margin: 10px 0;
+}
+.counter-wrapper p{
+    color: #fff;
+}
+
+.counter-image{
+    max-width: 40px;
+    height: 40px;
+    display: block;
+    margin:0 auto;
+}
+.counter-image img{
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 900px){
+
+    .counter-wrapper{
+        max-width: 700px;
+        margin: 30px auto;
+    }
+
+}
+@media only screen and (max-width: 600px){
+    .counter-image{
+        max-width: 30px;
+        height: 30px;
+    }
+    .counter{
+        margin: 4px 0 7px 0;
+        height: 20px;
+        font-size: 20px;
+    }
+    .counter-wrapper{
+        max-width: 400px;
+    }
+
+}
+@media only screen and (max-width: 400px){
+    .counter-image{
+        max-width: 25px;
+        height: 25px;
+    }
+    .counter-wrapper{
+        max-width: 380px;
+        padding: 10px;
+        margin: 20px auto;
+    }
+
+}

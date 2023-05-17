@@ -1,0 +1,251 @@
+.auth-container{
+    max-width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0 150px;
+    background: #fff;
+}
+.reset-container{
+    height: 80vh;
+}
+.auth-wrapper{
+    width: 65%;
+    height: 550px;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0, 0.3);
+    display: flex;
+    justify-content: center;
+}
+.reg-wrapper{
+    height: 600px;
+}
+.reset-wrapper{
+    width: 50%;
+    height: 350px;
+}
+.log-image{
+    background:linear-gradient(rgba(0,0, 0, 0.8), rgba(0,0,0, 0.4)),url(../../assets/pexels-rodnae-productions-7464479.jpg);
+}
+.reg-image{
+    background:linear-gradient(rgba(0,0, 0, 0.8), rgba(0,0,0, 0.4)),url(../../assets/pexels-rodnae-productions-7464404.jpg);
+}
+.reset-image{
+    background:linear-gradient(rgba(0,0, 0, 0.8), rgba(0,0,0, 0.4)),url(../../assets/reset-img.jpg);
+
+}
+.reg-image h2{
+    margin-bottom: 15px;
+}
+.auth-bg{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-basis: 50%;
+    color: #FFF;
+    text-align: center;
+    padding: 35px;
+}
+.auth-bg h2{
+    font-size: 30px;
+    padding: 30px 0;
+}
+.auth-form{
+    flex-basis: 50%;
+    padding: 35px;
+    text-align: center;
+}
+.auth-form h2{
+    font-size: 28px;
+    color: #333;
+}
+.auth-form small{
+    display: block;
+    margin: 25px 0;
+}
+
+.auth-form small a{
+    color: #fca510;
+}
+
+.auth-form .auth-log{
+    width: 100%;
+    height: 100%;
+}
+
+.input-wrap{
+    width: 100%;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.input-wrap span{
+    position: absolute;
+    right: 8px;
+    bottom: 5px;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    color: #fca510;
+    font-size: 22px;
+    
+}
+
+.input-wrap input::placeholder{
+    color: #999;
+	font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+	
+}
+.input-wrap input{
+    width: 100%;
+    padding: 12px 15px;
+    transition: all 0.3s ease-in;
+    border-radius: 5px;
+    border: 1px solid #999;
+    transition: all 0.3s ease-in;
+    
+}
+.input-wrap input:focus{
+    border:1px solid #fca510;
+    outline: 3px solid #fca5104b;
+}
+
+.route{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 12px;
+}
+.route a{
+    color: #fca510;
+}
+
+.auth-btn, .google-btn{
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    cursor: pointer;
+}
+.auth-btn{
+    background: #fca510;
+    color: #333;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 25px 0 30px;
+}
+.reset-btn{
+    margin: 0 0 25px;
+    
+}
+
+.google-btn{
+    background: whitesmoke;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.back-log{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  
+}
+.back-log a{
+    color: #333;
+
+}
+.back-log .icon{
+    color: #fca510;
+    font-size: 20px;
+    
+}
+
+@media only screen and (max-width: 1200px){
+    .auth-wrapper{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 900px){
+    .auth-wrapper{
+        height: 500px;
+    }
+    .reg-wrapper{
+        height: 550px;
+    }
+    .reset-wrapper{
+        height: 400px;
+    }
+    .auth-container{
+        padding: 60px 0 112px;
+        margin: 100px auto;
+    }
+    .reset-container{
+        height: 75vh;
+    }
+    .reg-wrapper .auth-btn{
+        margin: 15px 0;
+        
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .auth-bg{
+        display: none;
+    }
+    .auth-form{
+        flex-basis: 100%;
+        padding: 30px;
+    }
+ 
+    .auth-wrapper{
+        width: 100%;
+        height: 470px;
+        box-shadow: none;
+    }
+    .reset-wrapper{
+        height: 300px;
+    }
+    .auth-btn, .google-btn{
+        padding: 8px;
+        
+    }
+    .auth-btn{
+        margin: 20px 0 25px;
+        font-size: 14px;
+    }
+    .reset-btn{
+        margin: 0 0 25px; 
+    }
+    .google-btn{
+       font-size: 14px;
+    }
+    
+    .input-wrap input{
+        padding: 8px;
+    
+    }
+    .input-wrap{
+        margin-bottom: 20px;
+        z-index: 1;
+    }
+    .auth-form h2{
+        font-size: 25px;
+    }
+    .auth-container{
+        padding: 100px 0;
+        margin: 0;
+
+    }
+    .input-wrap span{
+        top: 7px;
+        font-size: 20px;
+    }
+    
+}
