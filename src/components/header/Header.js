@@ -1,22 +1,9 @@
 
 import './Header.css'
 import Navbar from '../navbar/Navbar';
-import Search from '../search/Search';
-import { useState } from 'react';
-import { useEffect } from 'react';
-
-
-
-
+import { Link } from 'react-router-dom';
 
 const Header =()=>{
-    const [search, setSearch] = useState('');
-
-
-
-    // useEffect(()=>{
-    //     console.log(search)
-    // },[search])
 
     return(
         <div className='header'>
@@ -28,9 +15,9 @@ const Header =()=>{
                 <p >We treat your package as top priority, Providing the 
                     fastest, safest and cheapest Logistic solutions Worldwide.
                 </p>
-                <div className='form-wrapper'>
-                    <p>Enter your tracking Number</p>
-                    <Search value={search} onChange={(e)=>setSearch(e.target.value)} />
+                <div className='track-link'>
+                    <p> Track your package</p>
+                    <Link to='/track'>Track &rarr;</Link>
                 </div>
 
             </div>

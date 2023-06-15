@@ -1,8 +1,8 @@
-import {useState, useEffect} from 'react'
+import { useEffect} from 'react'
 import './ViewDelivery.css'
 import {toast} from 'react-toastify';
 import {db} from '../../../firebase/firebaseConfig';
-import { query, orderBy, onSnapshot, collection, deleteDoc, doc} from "firebase/firestore"; 
+import {  deleteDoc, doc} from "firebase/firestore"; 
 import Loader from '../../../components/loader/Loader' 
 import {Link} from 'react-router-dom'
 import {BiEdit} from 'react-icons/bi'
@@ -39,11 +39,12 @@ const ViewDelivery = () => {
     // useEffect(() => {
     //   getDelivery()
     // }, []);
+
+    // this function fetches the deliveries from the db
     // const getDelivery = () =>{
   //   setIsLoading(true)
 
   //   try{
-
   //     const deliveriesRef = collection(db, "deliveries");
   //     const q = query(deliveriesRef, orderBy("createdAt", "desc"));
 

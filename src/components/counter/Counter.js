@@ -12,10 +12,10 @@ const Counter = () => {
     
   return (
     <div className='counter-wrapper'>
-        {counterData.map(({url,label,number,sign, index})=>{
+        {counterData.map(({url,label,number,sign})=>{
              
             return(
-                <div className='counter-content' key={index} >
+                <div className='counter-content' key={number} >
                     <span className='counter-image'><img src={url} alt="icon" /></span>  
                     <VisibilitySensor>
                     {({ isVisible }) => (
