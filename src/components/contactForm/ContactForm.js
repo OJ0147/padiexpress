@@ -50,13 +50,16 @@ const ContactForm = () => {
     <div className='form-control'>
         <h2>Contact Us</h2>
         <form onSubmit={handleSubmit} ref={FormRef}>
-            <input type="text" name='fullName' placeholder='FULLNAME' value={fullName} onChange={(e)=>setFullName(e.target.value) }required /> 
+            <label>Username</label>
+            <input type="text" name='fullName' placeholder='John Doe' value={fullName} onChange={(e)=>setFullName(e.target.value) }required /> 
 
-            <input type="email" name='email'placeholder='EMAIL' value={email} onChange={(e)=>setEmail(e.target.value)} required /> 
+            <label>Email</label>
+            <input type="email" name='email'placeholder='email@example.com' value={email} onChange={(e)=>setEmail(e.target.value)} required /> 
             
-            <input type="tel" name='phone' placeholder='ENTER PHONE NUMBER' value={phoneNumber} onChange={(e)=>setPhoneNumber(e.target.value)} required />
+            <label>Phone Number</label>
+            <input type="tel" name='phone' placeholder='xxx-xxxx-xxx' value={phoneNumber} onChange={(e)=>setPhoneNumber(e.target.value)} required />
 
-            <textarea name="message" cols="30" rows="10" placeholder='MESSAGE' value={message} onChange={(e)=>setMessage(e.target.value)} required ></textarea>
+            <textarea name="message" cols="30" rows="10" placeholder='Your Message' value={message} onChange={(e)=>setMessage(e.target.value)} required ></textarea>
 
             <button className='form-btn' type="submit">Submit</button>
         </form>

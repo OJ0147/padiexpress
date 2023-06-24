@@ -1,5 +1,6 @@
 import React from 'react'
 import './Footer.css'
+import logo from '../../assets/footer-logo.png'
 
 const Footer = () => {
     const date= new Date();
@@ -9,7 +10,7 @@ const Footer = () => {
         <div className="footer-container">
 
         <div className='footer-nav'>
-            <span>PadiExpress</span>
+            <div className='footer-logo'> <img src={logo} alt="logo" /></div>
             <ul>
                 <li>Services</li>
                 <li>About</li>

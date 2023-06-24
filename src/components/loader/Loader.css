@@ -12,7 +12,7 @@
 }
 .loader{
     z-index: 20;
-    max-width: 200px;
+    max-width: 100px;
 }
 .loader img{
     width: 100%;

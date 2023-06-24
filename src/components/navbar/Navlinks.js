@@ -72,8 +72,8 @@ const Navlinks=()=>{
                 </AdminOnlyLink>
 
                 <ShowOnLogin>
-                    <a href="#home" style={{display:'flex', alignItems:'center', gap:'3px', color:'#fca510'}} >
-                        <FaUserCircle size={16}/>
+                    <a href="#home" className='user-display' >
+                        <FaUserCircle size={20}/>
                         <span>{displayName}</span>
                     </a>
                 </ShowOnLogin>
@@ -98,7 +98,7 @@ const Navlinks=()=>{
                 </ShowOnLogOut>
 
                 <ShowOnLogin>
-                <button onClick={logoutUser} className='nav-btn'>Logout</button>
+                <button onClick={logoutUser} className='btn'>Logout</button>
                 </ShowOnLogin>
             </ul>
             

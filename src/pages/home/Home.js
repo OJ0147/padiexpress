@@ -29,9 +29,13 @@ const Home =()=>{
                 <div className="card-wrapper">
                     <div className="card-container" >
                         <Card title={'Air freight'} icon={<RiFlightTakeoffFill size={30} color='#055D30' />} desc={'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, velit.'} />
+
                         <Card title={'Ware housing'} icon={<FaWarehouse size={30} color='#055D30'/>} desc={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'} />
+
                         <Card title={'Ocean freight'} icon={<GiCargoShip size={30} color='#055D30'/>} desc={'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, eaque tempore.'} />
+
                         <Card title={'Trucking'} icon={<GiTruck size={30} color='#055D30'/>} desc={'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, eaque tempore.'} />
+
                     </div>
                 </div>
             </section>
@@ -54,7 +58,7 @@ const Home =()=>{
                          dolor sit amet consectetur adipisicing elit. Vel, consequuntur.
                     </p>
 
-                    <a href="#learn">LEARN MORE</a>
+                    <a href="#learn" className="track-link">LEARN MORE &rarr;</a>
                     <hr/>
                     <h4 className="company-head">companies that trust our service</h4>
 
@@ -85,7 +89,7 @@ const Home =()=>{
                          fuga laborum, vitae ea delectus amet aliquam odit nihil officia! Incidunt dolore illo maiores.
                     </p>
 
-                    <Link to='/about'>LEARN MORE</Link>
+                    <Link to='/about'className="track-link">LEARN MORE &rarr;</Link>
                     
                 </div>
                 <Counter/>

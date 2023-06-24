@@ -3,6 +3,7 @@ import MobileNav from "./MobileNav";
 import { useState } from "react";
 import './Navbar.css'
 import {Link} from 'react-router-dom'
+import logo from '../../assets/padilogistic.png'
 
 
 
@@ -21,7 +22,7 @@ const Navbar=()=>{
 
         <div className="navbar">
             <Link to='/'>
-                <h2 className="logo">padiExpress</h2>
+                <img src={logo} alt="logo" width={200} height={50} />
             </Link>
         
             <DesktopNav/>

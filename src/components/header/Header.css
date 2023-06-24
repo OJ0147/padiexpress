@@ -1,92 +1,81 @@
 .header{
     width: 100vw;
     max-width: 100%;
+    min-height: 100vh;
     height: auto;
+    padding: 70px 0;
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url(../../assets/slideimage2.jpg);
-    background-position:top center;
+    background-position: top left;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
     z-index: 1;
 }
-.content{ 
-    max-width: 1200px;
-    margin: 100px auto;
-    padding-bottom: 80px;
-    
+.head-content{ 
+    max-width: 1400px;
+    margin: 0px auto 50px;
+    padding: 80px 0;
 }
-.content h1{
+.head-content h1{
     color: #FFF;
-    font-size: 80px;
-    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-size: 100px;
+    font-weight: 700;
 
 }
-.content p{
-    color: #fff;
+.head-content p{
+    font-family: 'Alata', sans-serif;
     font-size: 20px;
-    margin: 25px 0;
+    font-weight: 400;
+    color: #fff;
+    margin: 10px 0;
     max-width: 550px;
     line-height: 1.6;
-    font-weight: 300;
-}
-.track-link{
-    max-width: 400px;
-    height: 170px;
-    background: #ffffff36;
-    backdrop-filter: blur(5px);
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
-    padding: 30px 15px;
-
-}
-.track-link p{
-    /* margin: 0 0 25px 0; */
-}
-.track-link a{
-    padding: 15px 40px;
-    color: #fff;
-    font-size: 16px;
-    background: #fca510;
-    
 }
 
 
 @media only screen and (max-width: 1250px){
-    .content{
+    .head-content{
         margin-left: 20px;
+    }
+    .head-content h1{
+        font-size: 80px;
+    }
 
+}
+@media only screen and (max-width: 980px){
+
+    .head-content h1{
+        font-size: 70px;
     }
 
 }
 @media only screen and (max-width:600px){
-    .content h1{
+    .head-content h1{
         font-size: 50px;
+    }
 
+    .head-content p{
+        margin-top: 20px;
     }
-    .content{
-        margin: 50px auto;
-        text-align: center;
-        /* position: static; */
-        
+
+    .head-content{
+        margin: 90px auto 50px;
+        text-align: center;   
     }
-    .track-link{
-        max-width: 380px;
-        margin: 0 auto;
-        padding: 20px;
-        position: relative;
-        z-index: 5;   
-    }
+ 
     .header{
         background-position: center;
+        padding:70px 0 0 0;
 
+    }
+    .track-link{
+        padding: 10px;
     }
 }
 @media only screen and (max-width:400px){
-    .content h1{
-        font-size: 30px;
+    .head-content h1{
+        font-size: 35px;
     }
 
-    .form-wrap{
-        max-width: 300px;
-    
-    }
 }

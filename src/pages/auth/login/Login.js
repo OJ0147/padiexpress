@@ -93,7 +93,7 @@ const Login = () => {
               </div>
 
               <div className='route'>
-                <span><input type="checkbox" name="" id="" /> Remember Me</span>
+                <span><input type="checkbox" name="" id="" /> <small> Remember Me </small></span>
                 <Link to='/Reset' >Forgot Password?</Link> 
               </div>
               

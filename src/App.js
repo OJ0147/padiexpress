@@ -20,11 +20,9 @@ function App() {
     <div className="App">
       <ToastContainer theme="dark" />
 
-
         <Routes>
           <Route element={<WithoutNavbar/>} >
-            <Route path="/" element={<Home/>} />
-
+          
             <Route path="/admin/*" element={
               <AdminOnlyRoute> 
                 <Admin/> 
@@ -34,6 +32,7 @@ function App() {
           </Route>
           
           <Route element={<WithNavbar/>}>
+            <Route path="/" element={<Home/>} />
             <Route path="/track" element={<TrackPage/>} />
             <Route path="/Login" element={<Login/>} />
             <Route path="/Register" element={<Register/>} />
