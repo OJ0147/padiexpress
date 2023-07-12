@@ -19,7 +19,7 @@ const AdminOnlyRoute = ({children}) => {
             <h4>Permission denied!!!</h4>
             <p className='error-text'>you have to be an admin to have access this page</p>
             <Link to= '/'> 
-                <button className='btn-return'> &larr; Return Home</button>
+                <button className='track-link btn-return'> &larr; Return Home</button>
             </Link>
         </div>
     )

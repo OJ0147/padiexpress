@@ -41,9 +41,7 @@ const packageStatus =[
 const AddDelivery = () => {
   const {id} = useParams()
   const deliver = useSelector(selectDelivery)
-  console.log(deliver)
   const thisDelivery = deliver.find((deliv) => deliv.id === id);
-  console.log(thisDelivery)
   const[delivery, setDelivery] = useState(()=>{
     const newState = detectForm(id,
      {...initialState},
@@ -102,8 +100,6 @@ const AddDelivery = () => {
           createdAt: Timestamp.fromDate(new Date()),
           
       });
-      console.log(docRef.gender)  
-      console.log(docRef.createdAt)
       setIsLoading(false)
       setDelivery({...initialState})
       toast.success('data upload completed')
@@ -116,8 +112,6 @@ const AddDelivery = () => {
 
   }
   
-
-
   // to edit doc
 
   const editDelivery = (e)=>{

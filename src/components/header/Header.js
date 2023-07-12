@@ -14,7 +14,7 @@ const Header =()=>{
                     fastest, safest and cheapest Logistic solutions Worldwide.
                 </p>
                 
-                <Link to='/track' className='track-link'>Track &rarr;</Link>
+                <Link to='/track-package' className='track-link'>Track &rarr;</Link>
                 
 
             </div>

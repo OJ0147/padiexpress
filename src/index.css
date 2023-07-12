@@ -39,15 +39,16 @@ a{
 .track-link{
     display: inline-block;
     margin-top: 30px;
-    padding: 25px;
+    padding: 15px;
     width: 200px;
-    font-family: 'Alata', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 24px;
     font-weight: 400;
     background: var(--primary-color);
     color: var(--secondary-color);
     border-radius: 5px;
     box-shadow: -15px 20px 8px rgba(0, 0, 0, 0.8);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     transition: all 0.5s ease-in-out;
 }
 

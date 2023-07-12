@@ -1,7 +1,6 @@
 import './App.css';
 import Home from './pages/home/Home'
 import {Route, Routes} from 'react-router-dom'
-import TrackPage from './pages/trackPage/TrackPage';
 import { ToastContainer } from 'react-toastify';
 import Login from './pages/auth/login/Login';
 import WithNavbar from './components/navbar/WithNavbar';
@@ -13,6 +12,7 @@ import About from './pages/about/About';
 import Services from './pages/services/Services';
 import Admin from './pages/admin/Admin';
 import AdminOnlyRoute from './components/adminRoute/AdminRoute';
+import Track from './pages/track/Track';
 
 
 function App() {
@@ -33,7 +33,7 @@ function App() {
           
           <Route element={<WithNavbar/>}>
             <Route path="/" element={<Home/>} />
-            <Route path="/track" element={<TrackPage/>} />
+            <Route path="/track-package" element={<Track/>} />
             <Route path="/Login" element={<Login/>} />
             <Route path="/Register" element={<Register/>} />
             <Route path="/Reset" element={<Reset/>} />

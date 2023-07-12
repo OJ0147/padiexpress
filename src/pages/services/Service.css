@@ -239,4 +239,18 @@
         width: 300px;
 
     }
+    .service__heading h1{
+        font-size: 28px;
+        width: 180px;
+    }
+    .service__heading h1::before{
+        width: 50px;
+        right:-50px;
+        bottom: 10px;
+    }
+    .service__heading h1::after{
+        width: 50px;
+        left:-50px;
+        bottom: 10px;
+    }
 }

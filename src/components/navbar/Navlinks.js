@@ -98,7 +98,7 @@ const Navlinks=()=>{
                 </ShowOnLogOut>
 
                 <ShowOnLogin>
-                <button onClick={logoutUser} className='btn'>Logout</button>
+                <button onClick={logoutUser} className='btn logout'>Logout</button>
                 </ShowOnLogin>
             </ul>
             

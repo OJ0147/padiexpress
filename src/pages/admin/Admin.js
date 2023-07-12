@@ -6,6 +6,7 @@ import AddDelivery from './addDelivery/AddDelivery'
 import ViewDelivery from './viewDelivery/ViewDelivery'
 import { FaBars, FaHome } from 'react-icons/fa'
 import Sidebar from './sidebar/Sidebar'
+import logo from '../../assets/padilogistic.png'
 
 const Admin = () => {
   const [isActive, setIsActive]=useState(false)
@@ -20,13 +21,13 @@ const Admin = () => {
   return (
     <div className='adminpage'>
         <nav className='admin-navbar'>
-            <span className='Logo'>PadiExpress</span>
+            <img src={logo} alt="logo" width={150} height={50} />
             <ul>
                 <li>
-                    <NavLink to ='/'> <FaHome size={25}/> </NavLink>
+                    <NavLink to ='/'> <FaHome size={25} color='#362a01'/> </NavLink>
                 </li>
                 <li className='sidebar-menu'>
-                    <FaBars size={25} color='#fff' onClick={toggleSidebar}/>
+                    <FaBars size={25} color='#000' onClick={toggleSidebar}/>
                 </li>
             </ul>
         </nav>

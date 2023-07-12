@@ -1,40 +1,57 @@
-import { useState } from "react";
-import useFetchCollection from "../../components/customHooks/useFetchCollection";
-import './TrackPage.css'
-import {BiPackage } from "react-icons/bi";
-import {BsFillTruckFrontFill} from "react-icons/bs";
+import React from 'react'
+import './Track.css'
+import { BiPackage } from 'react-icons/bi'
+import { BsFillTruckFrontFill } from 'react-icons/bs'
+import { useState } from 'react'
+import { db } from '../../firebase/firebaseConfig'
+import { toast } from 'react-toastify'
+import { collection, getDocs } from 'firebase/firestore'
+import Loader from '../../components/loader/Loader'
 
- const TrackPage=()=>{
-    const [search, setSearch] = useState('');
+const Track = () => {
+
+    const [search, setSearch]=useState("")
     const [trackPackage, setTrackPackage] = useState([])
+    const [isLoading, setIsLoading] = useState(false)
 
-    const {data} = useFetchCollection("deliveries")
 
-
-    const trackDelivery = (e)=>{
-        e.preventDefault();
-        const trackedPackage = data.filter(item =>{
-
-            return item.trackingId === search;
-
-        } );
-        setTrackPackage(trackedPackage)
-        console.log(trackedPackage)
-        console.log("you submitted")
+    const trackDelivery = async(e) =>{
+        e.preventDefault()
+        setIsLoading(true)
         
-    }
-
- 
-
-    const shortenText =(text, n)=>{
-        if(text.length > n){
-            const shortenedText = text.substr(0, n).concat("...");
-            return shortenedText
+        try{
+            const colRef = collection(db, 'deliveries')
+            const snapshots = await getDocs(colRef)
+            const docs = snapshots.docs.map((doc)=>{
+                const data = doc.data()
+                data.id = doc.id
+                return data
+            } )
+            const trackedPackage = docs.filter(doc=>{
+                return doc.trackingId === search;
+            })
+            setIsLoading(false)
+            setTrackPackage(trackedPackage)
+            console.log(trackPackage)
+            
+        } catch(error){
+            setIsLoading(false)
+            toast.warning(`no packages with tracking id ${search}`)
         }
-        return text
+
     }
-    return(
-        <>
+    const shortenText=(text, n)=>{
+        if(text.length > n){
+            var shortenedText = text.slice(0, n).concat("...");
+            return shortenedText;
+        }
+        return text;
+    }
+
+
+  return (
+    <>
+    {isLoading && <Loader/>}
         <main className="track-container">
         <div className="form-wrap">
             <form className='search-form' onSubmit={trackDelivery} >
@@ -109,13 +126,13 @@ import {BsFillTruckFrontFill} from "react-icons/bs";
                             </div>
                         </section>
                     )
-                })}
+                })} 
             </div>
             
         </div>
         </main>
         </>
-    );
- }
+  )
+}
 
- export default TrackPage;
+export default Track

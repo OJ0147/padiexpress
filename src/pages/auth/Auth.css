@@ -3,11 +3,13 @@
     display:flex;
     align-items: center;
     justify-content: center;
-    padding: 100px 0 150px;
+    padding: 150px 0;
     background: #fff;
 }
 .reset-container{
-    height: 80vh;
+    height: 85vh;
+    padding-top: 250px;
+
 }
 .auth-wrapper{
     width: 65%;
@@ -24,7 +26,10 @@
 }
 .reset-wrapper{
     width: 50%;
-    height: 350px;
+    height: 400px;
+}
+.reset-wrapper .auth-form h2{
+    font-size: 30px;
 }
 .log-image{
     background:linear-gradient(rgba(225,225, 225, 0.5), rgba(0,0,0, 0.7)),url(../../assets/pexels-rodnae-productions-7464479.jpg);
@@ -67,6 +72,7 @@ font-family: 'Alata',sans-serif;
 .auth-form h2{
     font-size: 40px;
     color: var(--secondary-color);
+    font-family: 'Poppins',sans-serif;
 }
 .auth-form small{
     display: block;
@@ -130,7 +136,7 @@ font-family: 'Alata',sans-serif;
 }
 .route a{
     color: var(--primary-color);
-    font-family: 'Alata',sans-serif;
+    font-family: 'Poppins',sans-serif;
     font-size: 14px;
 }
 .route span{
@@ -180,12 +186,12 @@ font-family: 'Alata',sans-serif;
 }
 .back-log a{
     color:var(--primary-color);
+    font-family: 'Poppins',sans-serif;
 
 }
 .back-log .icon{
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-size: 20px;
-    
 }
 
 @media only screen and (max-width: 1200px){
@@ -237,7 +243,7 @@ font-family: 'Alata',sans-serif;
         height: 580px;
     }
     .reset-wrapper{
-        height: 300px;
+        height: 350px;
     }
     .auth-btn, .google-btn{
         padding: 15px;

@@ -52,6 +52,10 @@
     transition: 0.5s ease-in;
 
 }
+.logout{
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+ }
 .navlinks ul .login a:hover{
     border: 3px solid var(--secondary-color);
 }
@@ -128,7 +132,7 @@
         display: flex;
         padding: 20px;
         position: absolute;
-        top: -250px;
+        top: -350px;
         left: 0;
         right: 0;
         transition: 0.5s ease-in;
