@@ -160,6 +160,11 @@
     }
 
 }
+@media only screen and (max-width:420px){
+    .contact-wrapper{
+        margin: 45px 0px;
+    }
+}
 @media only screen and (max-width:320px){
     .form-control{
         padding: 25px;
@@ -171,7 +176,7 @@
         height: 80px;
         margin-bottom: 20px;
     }
-
+ 
 }
 
 
