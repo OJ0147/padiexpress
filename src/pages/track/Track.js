@@ -28,7 +28,7 @@ const Track = () => {
                 return data
             } )
             const trackedPackage = docs.filter(doc=>{
-                return doc.trackingId === search;
+                return doc.trackingId.toLowerCase() === search.toLowerCase();
             })
             setIsLoading(false)
             setTrackPackage(trackedPackage)
